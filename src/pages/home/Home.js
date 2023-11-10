@@ -1,3 +1,8 @@
+import ChartBox from "../../components/chartBox/ChartBox";
+import TopBox from "../../components/topBox/TopBox";
+import PieChartBox from "../../components/pieCartBox/PieChartBox";
+import BarChartBox from "../../components/barChartBox/BarChartBox";
+import BigChartBox from "../../components/bigChartBox/BigChartBox"
 
 import {
   barChartBoxRevenue,
