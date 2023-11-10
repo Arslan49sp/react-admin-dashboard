@@ -1,5 +1,11 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./styles/global.scss";
+import Home from "./pages/home/Home";
+import User from "./pages/user/User";
+import Users from "./pages/users/Users";
+import Product from "./pages/product/Product";
+import Products from "./pages/products/Products";
+import Login from "./pages/login/Login";
 
 function App() {
   const Layout = () => {
