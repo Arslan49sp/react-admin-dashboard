@@ -1,5 +1,6 @@
 import DataTable from "../../components/dataTable/DataTable";
 import "./users.scss";
+import Add from "../../components/add/Add";
 import { useState } from "react";
 import { userRows } from "../../data/data";
 // import { useQuery } from "@tanstack/react-query";
@@ -72,6 +73,15 @@ const Users = () => {
         <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
       <DataTable slug="users" columns={columns} rows={userRows} />
+
+       {/* TEST THE API */}
+
+      {/* {isLoading ? (
+        "Loading..."
+      ) : (
+        <DataTable slug="users" columns={columns} rows={data} />
+      )} */}
+      {open && <Add slug="user" columns={columns} setOpen={setOpen} />}
     </div>
   );
 };
